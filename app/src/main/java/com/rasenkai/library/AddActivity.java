@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AddActivity extends AppCompatActivity {
 
-    EditText title_input, author_input, price_input , date_input;
+    EditText title_input, author_input, price_input;
     Button add_button;
 
     @Override
@@ -19,8 +19,7 @@ public class AddActivity extends AppCompatActivity {
 
         title_input = findViewById(R.id.title_input);
         author_input = findViewById(R.id.author_input);
-        price_input = findViewById(R.id.price);
-        date_input = findViewById(R.id.date);
+        price_input = findViewById(R.id.price_input);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +28,6 @@ public class AddActivity extends AppCompatActivity {
                 myDB.addBook(title_input.getText().toString().trim(),
                         author_input.getText().toString().trim(),
                         Integer.valueOf(price_input.getText().toString().trim()));
-                Integer.valueOf(date_input.getText().toString().trim());
             }
         });
     }
