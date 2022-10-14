@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_500"
-    android:padding="70dp"
+    android:padding="5dp"
     tools:context=".login">
 
     <EditText
@@ -40,10 +41,27 @@
         android:hint="Enter Password" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
         android:layout_marginTop="83dp"
         android:onClick="login"
         android:text="Login" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="341dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        tools:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="406dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-24dp"
+        tools:srcCompat="@drawable/footer" />
 </RelativeLayout>
