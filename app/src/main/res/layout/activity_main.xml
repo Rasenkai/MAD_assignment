@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/purple_500"
-    android:padding="70dp">
+    android:padding="50dp">
 
     <EditText
         android:id="@+id/full_name"
@@ -72,6 +72,12 @@
         android:layout_marginTop="115dp"
         android:onClick="register"
         android:text="Register" />
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="406dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-24dp"
+        tools:srcCompat="@drawable/footer" />
 </RelativeLayout>
-
-
