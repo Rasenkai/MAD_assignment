@@ -45,7 +45,8 @@ public class login extends AppCompatActivity {
             Cursor result = loginDB.rawQuery(sql, null);
             result.moveToNext();
             if (result.getString(0).equals("0")) {
-                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(this, Home.class);
+                startActivity(i);
             } else {
                 Intent i = new Intent(this, Home.class);
                 startActivity(i);
